@@ -7,24 +7,27 @@ export default function Filter({value,onChange}) {
 
     return (
         <div className="panel-tabs">
-            <p 
+            <a 
+                href="#"
                 onClick={() => handleClick("ALL")}
                 className={value === 'ALL' ? 'is-active':''}
             >
                 ALL
-            </p>
-            <p 
+            </a>
+            <a 
+                href="#"
                 onClick={() => handleClick("TODO")}
                 className={value === 'TODO' ? 'is-active':''}
             >
                 TODO
-            </p>
-            <p 
+            </a>
+            <a 
+                href="#"
                 onClick={() => handleClick("DONE")}
                 className={value === 'DONE' ? 'is-active':''}
             >
                 DONE
-            </p>
+            </a>
         </div>
     )
 }
